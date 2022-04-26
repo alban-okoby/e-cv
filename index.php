@@ -1,6 +1,7 @@
 <?php
-    require('config/database.php')
+   require('config/database.php');
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alban Okoby">
-    <meta name="description" content="Emmanuel Alban Okoby est un developpeur, formateur et encadreur qui conçoit des interfaces de sites et applications web | ceci est l'un de mes travaux Personals j'ai nommé Personnal portfolio_1">
+    <meta name="description" content="Emmanuel Alban Okoby est un developpeur, formateur et encadreur qui conçoit des interfaces de sites et applications web | ceci est l'un de mes travaux Personals j'ai nommé Personnal php_portfolio">
     <title> ALBAN OKOBY | Personal portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet"
@@ -43,12 +44,27 @@
     <div id="menuIcon" class="fas fa-bars"></div>
 
     <!-- Section d'acceuil -->
-        <section class="home" id="home">
-            <h3>Hello world !</h3>
+
+    <section class="home" id="home">
+    <?php 
+        $homeStatement = $connect->prepare('SELECT * FROM home');
+        $homeStatement->execute();
+        $home = $homeStatement->fetch();
+     
+     //    Affichage par champ de la table home
+        foreach($home as $row) {
+        
+        ?>
+            <h3> <? echo Hello world !; ?></h3>
+        }
+    ?>
+        
+
+
             <h2>Je suis 
                 <span>Alban Okoby</span>
             </h2>
-            <p>Si ce n'est que magnifique ! Que dis-je d'autre. <br> " Partager une ligne de code pour un monde de plus en plus meilleur ".</p>
+            <p>Si ce n'est que magnifique ! Que dire d'autre. <br> " Partager une ligne de code pour un monde de plus en plus meilleur ".</p>
             <a href="#apropos"><button class="btn">Qui suis-je ? <i class="fas fa-user"></i></button></a>
         </section>
     <!-- End Section d'acceuil -->
@@ -172,7 +188,6 @@
     <!-- End Section portfolio -->
 
     
-</script>
 
     <!-- cdn JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
