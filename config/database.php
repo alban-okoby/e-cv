@@ -1,7 +1,7 @@
 <?php
     
     $hoostName = "localhost";
-    $dbName = "moncv";
+    $dbName = "php_portfolio";
     $userName = "root";
     $userPassword = "";
 
