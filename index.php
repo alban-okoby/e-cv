@@ -47,26 +47,30 @@
 
     <section class="home" id="home">
     <?php 
-        $homeStatement = $connect->prepare('SELECT * FROM home');
+        $sqlHome = 'SELECT * FROM home';
+        $homeStatement = $connect->prepare($sqlHome);
         $homeStatement->execute();
-        $home = $homeStatement->fetch();
+        $row = $homeStatement->fetchAll();
      
-     //    Affichage par champ de la table home
-        foreach($home as $row) {
-        
+     //  Affichage par champ de la table home
+        foreach($row as $home) {
         ?>
-            <h3> <? echo Hello world !; ?></h3>
-        }
-    ?>
-        
-
-
+            <h3> <?php echo $home['title']; ?> </h3>
             <h2>Je suis 
-                <span>Alban Okoby</span>
+                <span> <?php echo $home['name'] ?> </span>
             </h2>
-            <p>Si ce n'est que magnifique ! Que dire d'autre. <br> " Partager une ligne de code pour un monde de plus en plus meilleur ".</p>
-            <a href="#apropos"><button class="btn">Qui suis-je ? <i class="fas fa-user"></i></button></a>
-        </section>
+            <p><?php echo $home['post']; ?></p>
+            <p> <?php echo $home['description']; ?> 
+            </p>
+            <a href="#apropos">
+                <button class="btn"> <?php echo $home['button']; ?> 
+                <i class="fas fa-user"></i>
+                </button>
+            </a>  
+        <?php    
+        }
+        ?>
+    </section>
     <!-- End Section d'acceuil -->
 
     <!-- Section  à propos -->
