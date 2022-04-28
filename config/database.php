@@ -10,7 +10,7 @@
       
     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       
-     echo '<i style="color:green; font-size:4rem">Connexion établie avec succès !</i>';
+    //  echo '<i style="color:green; font-size:4rem">Connexion établie avec succès !</i>';
         
     }  
     catch(PDOException $error){
