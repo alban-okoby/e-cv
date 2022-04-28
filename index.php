@@ -75,47 +75,60 @@
 
     <!-- Section  à propos -->
      <section class="about" id="apropos">
-        <h2 class="heading">
-            A propos de<span>   moi </span>
-        </h2>
-        <article class="row">
-            <div class="info">
-                <h3><span> nom :</span> Alban Okoby </h3>
-                <h3><span> Age :</span> 25 ans </h3>
-                <h3><span> Qualification :</span> Licence</h3>
-                <h3><span> Post :</span> developpeur full Stack freelance</h3>
-                <h3><span> Langue :</span> Français</h3>
-                <a href="#">
-                    <button class="btn"> Mon CV 
-                        <i class="fas fa-download"></i>
-                    </button>
-                </a>
-            </div>
-            <aside class="counter">
-                
-                <div class="box">
-                    <span>+2</span>
-                    <h3> années d'expériences</h3>
+     <?php 
+        $sqlAbout = 'SELECT * FROM about';
+        $aboutStatement = $connect->prepare($sqlAbout);
+        $aboutStatement->execute();
+        $row = $aboutStatement->fetchAll();
+     
+     //  Affichage par champ de la table about
+        foreach($row as $about) {
+        ?>
+            <h2 class="heading">
+                A propos de<span>   moi </span>
+            </h2>
+            <article class="row">
+                <div class="info">
+                    <h3><span> nom :</span> <?php echo $about['name']; ?></h3>
+                    <h3><span> Age :</span> <?php echo $about['age']; ?> </h3>
+                    <h3><span> Qualification :</span> <?php echo $about['qualification']; ?> </h3>
+                    <h3><span> Emploi(s) :</span> <?php echo $about['post']; ?> </h3>
+                    <h3><span> Langue :</span> <?php echo $about['langue']; ?> </h3>
+                    <a href="#">
+                        <button class="btn"> <?php echo $about['button']; ?> 
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </a>
                 </div>
-                <div class="box">
-                    <span>+7</span>
-                    <h3> projets terminés</h3>
-                </div>
-                <div class="box">
-                    <span>+20</span>
-                    <h3> clients satisfaits</h3>
-                </div>
-                <div class="box">
-                    <span>+5</span>
-                    <h3> formations organisées</h3>
-                </div>
-                <div class="box">
-                    <span>+11</span>
-                    <h3> certifications</h3>
-                </div>
-                
-            </aside>
-        </article>
+                <aside class="counter">
+                    
+                    <div class="box">
+                        <span>+<?php echo $about['annee_exp']; ?> </span>
+                        <h3> années d'expériences</h3>
+                    </div>
+                    <div class="box">
+                        <span>+<?php echo $about['projet_termine']; ?> </span>
+                        <h3> projets terminés</h3>
+                    </div>
+                    <div class="box">
+                        <span>+<?php echo $about['clt_satisfait']; ?> </span>
+                        <h3> clients satisfaits</h3>
+                    </div>
+                    <div class="box">
+                        <span>+<?php echo $about['formations_organisees']; ?> </span>
+                        <h3> formations organisées</h3>
+                    </div>
+                    <div class="box">
+                        <span>+<?php echo $about['certification']; ?> </span>
+                        <h3> certifications</h3>
+                    </div>
+                    
+                </aside>
+            </article>
+        
+        <?php
+        }
+        ?>
     </section>
     <!-- End Section  a peopos -->
 
