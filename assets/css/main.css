@@ -315,6 +315,26 @@ section{
 
 /* End porfolio style section */
 
+/* Scroll top style */
+.scroll_top{
+    /* background: var(--yellow); */
+    position: fixed; 
+    bottom: 5.5rem; right: 2.5rem; 
+    z-index: 100; 
+    border-radius: 3.5rem; 
+    padding: 1rem 1.9rem; 
+    letter-spacing: .5rem; 
+    font-size: 2rem; 
+    text-align: center; 
+    display: none; 
+} 
+.scroll_top i{ 
+    color: var(--black); 
+    background-color: var(--yellow); 
+    border-radius: 3.5rem; 
+    font-size: 5rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1200px) {
     html{
