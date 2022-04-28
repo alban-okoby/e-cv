@@ -47,12 +47,8 @@
 
     <section class="home" id="home">
     <?php 
-        $sqlHome = 'SELECT * FROM home';
-        $homeStatement = $connect->prepare($sqlHome);
-        $homeStatement->execute();
-        $row = $homeStatement->fetchAll();
-     
-     //  Affichage par champ de la table home
+     //  Appel et affichage des données de la table home
+        require "Model/home.php";
         foreach($row as $home) {
         ?>
             <h3> <?php echo $home['title']; ?> </h3>
@@ -76,12 +72,9 @@
     <!-- Section  à propos -->
      <section class="about" id="apropos">
      <?php 
-        $sqlAbout = 'SELECT * FROM about';
-        $aboutStatement = $connect->prepare($sqlAbout);
-        $aboutStatement->execute();
-        $row = $aboutStatement->fetchAll();
+        require 'Model/home.php';
      
-     //  Affichage par champ de la table about
+     //  Appel et affichage des données de la table about
         foreach($row as $about) {
         ?>
             <h2 class="heading">
