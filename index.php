@@ -204,7 +204,12 @@
 
     <!-- End Section portfolio -->
 
-    
+    <!-- Scroll to -->
+    <div class="scroll_top"> 
+        <a href="#home"> 
+            <i class="fas fa-arrow-alt-circle-up"></i> 
+        </a> 
+    </div>
 
     <!-- cdn JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
