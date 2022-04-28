@@ -49,6 +49,7 @@
     <?php 
      //  Appel et affichage des données de la table home
         require "Model/home.php";
+
         foreach($row as $home) {
         ?>
             <h3> <?php echo $home['title']; ?> </h3>
@@ -72,9 +73,9 @@
     <!-- Section  à propos -->
      <section class="about" id="apropos">
      <?php 
-        require 'Model/home.php';
+        //  Appel et affichage des données de la table about
+        require 'Model/about.php';
      
-     //  Appel et affichage des données de la table about
         foreach($row as $about) {
         ?>
             <h2 class="heading">
