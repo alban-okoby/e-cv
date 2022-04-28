@@ -1,5 +1,5 @@
 <?php
-   require('config/database.php');
+   require('Model/database.php');
 ?>
 
 
@@ -19,7 +19,7 @@
     <link rel="stylesheet" 
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
     <!-- css personalisé -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="public/assets/css/main.css">
 
     
 </head>
@@ -27,7 +27,7 @@
     
     <header>
         <div class="utilisateur">
-            <img src="assets/image/alban.jpg" alt="Alban okoby | photo profil">
+            <img src="public/assets/image/alban.jpg" alt="Alban okoby | photo profil">
             <h3 class="nom">Alban Okoby</h3>
             <p>Developpeur Web</p>
         </div>
@@ -214,6 +214,6 @@
     <!-- cdn JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JavaScript personalisé -->
-    <script src="assets/js/main.js"></script>
+    <script src="public/assets/js/main.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 26 avr. 2022 à 06:20
+-- Généré le : ven. 29 avr. 2022 à 01:24
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.1.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 
 --
 -- Base de données : `php_portfolio`
---
+-- Aithor : ALBAN OKOBY
 
 -- --------------------------------------------------------
 
@@ -33,13 +33,13 @@ CREATE TABLE `about` (
   `name` varchar(100) NOT NULL,
   `age` int(11) NOT NULL,
   `qualification` varchar(100) NOT NULL,
-  `post` varchar(50) NOT NULL,
+  `post` varchar(100) NOT NULL,
   `langue` varchar(100) NOT NULL,
   `button` varchar(20) NOT NULL,
-  `année_exp` int(10) NOT NULL,
-  `porjet_termine` int(11) NOT NULL,
+  `annee_exp` int(2) NOT NULL,
+  `projet_termine` int(3) NOT NULL,
   `clt_satisfait` int(11) NOT NULL,
-  `formations_organises` int(11) NOT NULL,
+  `formations_organisees` int(11) NOT NULL,
   `certification` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -47,8 +47,8 @@ CREATE TABLE `about` (
 -- Déchargement des données de la table `about`
 --
 
-INSERT INTO `about` (`id`, `title`, `name`, `age`, `qualification`, `post`, `langue`, `button`, `année_exp`, `porjet_termine`, `clt_satisfait`, `formations_organises`, `certification`) VALUES
-(1, 'A propos de moi', 'Alban Okoby', 25, 'Licence', 'développeur full Stack / Formateur web, scientifiq', 'Français, Anglais technique.', 'Mon CV ', 2, 7, 20, 5, 11);
+INSERT INTO `about` (`id`, `title`, `name`, `age`, `qualification`, `post`, `langue`, `button`, `annee_exp`, `projet_termine`, `clt_satisfait`, `formations_organisees`, `certification`) VALUES
+(1, 'A propos de moi', 'Alban Emmanuel Okoby', 25, 'Licence', 'Informaticien développeur/ Formateur web freelance, Prof de Maths de collège', 'Français, Anglais informatique.', 'Mon CV ', 2, 7, 20, 5, 11);
 
 -- --------------------------------------------------------
 
@@ -86,7 +86,8 @@ CREATE TABLE `home` (
   `id` int(11) NOT NULL,
   `title` varchar(50) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `description` text NOT NULL,
+  `post` varchar(150) NOT NULL,
+  `description` varchar(255) NOT NULL,
   `button` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -94,8 +95,8 @@ CREATE TABLE `home` (
 -- Déchargement des données de la table `home`
 --
 
-INSERT INTO `home` (`id`, `title`, `name`, `description`, `button`) VALUES
-(1, 'Hello world', 'Alban Emmanuel Okoby', 'Je suis informaticien formateur/développeur web.', 'mon Statut ?');
+INSERT INTO `home` (`id`, `title`, `name`, `post`, `description`, `button`) VALUES
+(1, 'Hello world', 'Alban Emmanuel Okoby', 'Informaticien développeur/ Formateur web freelance, Prof de Maths de collège', 'Si ce n\'est que magnifique ! Que dire d\'autre.\r\n\" Partager un savoir, une ligne de code pour un monde de plus en plus meilleur \"', 'A propos ');
 
 -- --------------------------------------------------------
 
