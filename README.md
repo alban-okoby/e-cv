@@ -3,7 +3,7 @@ A un moment vous êtes amené à faire votre propre portrait professionnel, pas 
 
 In construction .. 
 
-# Exigences du projet ?
+# Exigences du projet
 Pour un tel projet(utilisant des scripts php/javascript vous devez avoir le minimum de logiciels vous permettant de l'exécuter, soit un SGBD(Xampp ou Wamp ou Mamp fera l'affaire). On supposant que vous ayez le nécessaire passons au projet en lui-même.
 
 # Base de données
