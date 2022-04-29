@@ -128,51 +128,26 @@
 
     <!-- Section  Education -->
         <section class="education" id="education">
-            <h2 class="heading">
-                Mon<span> parcours éducatif / professionnel</span>   
-            </h2>
-            <article class="box-container">
-               <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2018</span>
-                    <h3> Baccalaureat Scientifique</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-               </div>
-               <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2019</span>
-                    <h3> Intégrateur web</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-                </div>
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2020</span>
-                    <h3> Intégrateur/Développeur web</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-                 </div>
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2021</span>
-                    <h3> Développeur front end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-                </div>
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>mars 2021</span>
-                    <h3> Développeur front end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-                </div>
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Janvier 2022</span>
-                    <h3> Développeur PHP/Symfony</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio cupiditate maxime quo quae commodi nobis, debitis vel.</p>
-                </div>
+         <h2 class="heading">
+            Mon<span> parcours éducatif / professionnel</span>   
+        </h2>
 
-    
-                </aside>
-            </article>
-        </section>
+        <?php 
+         //  Appel et affichage des données de la table education
+         require 'Model/education.php';
+         
+             foreach($rows as $education) {
+            ?>
+                <article class="box-container">
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span> <?= $education['annee'] ?> </span>
+                        <h3>  <?= $education['post'] ?> </h3>
+                        <p> <?= $education['description'] ?> </p>
+                    </div>
+                </article>
+                <?php } ?>
+            </section>
     <!-- End Section Education -->
 
     <!-- Starts Section portfolio -->
