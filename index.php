@@ -1,8 +1,3 @@
-<?php
-   require('Model/database.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
