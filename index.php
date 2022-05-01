@@ -150,19 +150,17 @@
         <section class="portfolio" id="portfolio">
             <h2 class="heading"> Mes<span> réalisations</span></h2>
             <article class="box-container">
-                <a href="#">
+                <?php 
+                    require 'Model/works.php';
+                    foreach($row as $work){
+                ?>
+                    <a href="#">
                     <div class="box">
-                        <img src="assets/image/qrcode/lg.PNG">
-                      <p>Qr Code</p>
+                        <img src="public/assets/image/<?= $work['projet_img'] ?>">
+                        <p><?= $work['projet_name'] ?></p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="box">
-                        <img src="assets/image/chatapp/chatapp.PNG">
-                      <p>Chat App</p>
-                    </div>
-                </a>
-               
+                    </a>
+                    <?php } ?>
             </article>
         </section>
 
