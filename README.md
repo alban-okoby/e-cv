@@ -4,7 +4,7 @@ A un moment vous êtes amené à faire votre propre portrait professionnel, pas 
 Cette application est actuellement en construction .. 
 
 ### Parties terminées
-Read data
+Read data depuis la base de données php_portfolio
 
 # Exigences du projet
 Pour un tel projet(utilisant des scripts php/javascript vous devez avoir le minimum de logiciels vous permettant de l'exécuter, soit un SGBD(Xampp ou Wamp ou Mamp fera l'affaire). On supposant que vous ayez le nécessaire passons au projet en lui-même.
