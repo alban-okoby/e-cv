@@ -43,7 +43,7 @@
     <section class="home" id="home">
     <?php 
      //  Appel et affichage des données de la table home
-        require "Model/home.php";
+        require "Controller/HomeController.php";
 
         foreach($row as $home) {
         ?>
@@ -69,7 +69,7 @@
      <section class="about" id="apropos">
      <?php 
         //  Appel et affichage des données de la table about
-        require 'Model/about.php';
+        require 'Controller/AboutController.php';
      
         foreach($row as $about) {
         ?>
@@ -125,7 +125,7 @@
     <section class="education" id="education">
         <?php 
         //  Appel et affichage des données de la table education
-            require 'Model/education.php';
+            require 'Controller/EducationController.php';
         ?>
             <h2 class="heading">
                 Mon
@@ -151,7 +151,7 @@
             <h2 class="heading"> Mes<span> réalisations</span></h2>
             <article class="box-container">
                 <?php 
-                    require 'Model/works.php';
+                    require 'Controller/PortfolioController.php';
                     foreach($row as $work){
                 ?>
                     <a href="#">
