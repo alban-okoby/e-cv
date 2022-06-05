@@ -95,10 +95,12 @@
                             echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
+
                         ?>
                         </tbody>
                     </table>
                 </div>
+
                 <div class="second">
                     <table class="table table-striped table-bordered">
                         <thead>
@@ -107,18 +109,19 @@
                                 <th>Projet Achevé(s)</th>
                                 <th>Client(s) Satisfait(s)</th>
                                 <th>Formations Dispensées</th>
-                                    <th>Actions</th>
+                                <th>certification</th>
+                                <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
                                     echo
                                     '<tr>';
-                                    echo '<td>'.$home['annee_exp'].'</td>';
-                                    echo '<td>'.$home['projet_termine'].'</td>';
-                                    echo '<td>'.$home['clt_satisfait'].'</td>';
-                                    echo '<td>'.$home['formations_organisees'].'</td>';
-                                    echo '<td>'.$home['certification'].'</td>';
+                                    echo '<td>'.$about['annee_exp'].'</td>';
+                                    echo '<td>'.$about['projet_termine'].'</td>';
+                                    echo '<td>'.$about['clt_satisfait'].'</td>';
+                                    echo '<td>'.$about['formations_organisees'].'</td>';
+                                    echo '<td>'.$about['certification'].'</td>';
                                     echo '<td width="300">';
                                     echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                                     echo "  ";
@@ -126,7 +129,7 @@
                                     echo "  ";
                                     echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
                                     echo '</td>';
-                                    echo '</tr>';
+                                    echo '</tr><br>';
     
                                 ?>
     
