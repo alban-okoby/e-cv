@@ -19,7 +19,9 @@
     
 </head>
 <body>
-    
+    <?php 
+        require 'src/Controller/database.php';
+    ?>
     <header>
         <div class="utilisateur">
             <img src="public/assets/image/alban.jpg" alt="Alban okoby | photo profil">
@@ -59,7 +61,8 @@
                 <i class="fas fa-user"></i>
                 </button>
             </a>  
-        <?php    
+        <?php  
+        DataBase::disconnect();  
         }
         ?>
     </section>
@@ -78,7 +81,7 @@
             </h2>
             <article class="row">
                 <div class="info">
-                    <h3><span> nom :</span> <?php echo $about['name']; ?></h3>
+                    <h3><span> Nom & Prenom(s) :</span> <?php echo $about['name']; ?></h3>
                     <h3><span> Age :</span> <?php echo $about['age']; ?> </h3>
                     <h3><span> Qualification :</span> <?php echo $about['qualification']; ?> </h3>
                     <h3><span> Emploi(s) :</span> <?php echo $about['post']; ?> </h3>
@@ -116,6 +119,7 @@
             </article>
         
         <?php
+        DataBase::disconnect();  
         }
         ?>
     </section>
