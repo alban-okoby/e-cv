@@ -195,7 +195,9 @@
                             echo
                             '<tr>';
                             echo '<td>'.$portfolio['projet_name'].'</td>';
-                            echo '<td>'.$portfolio['projet_img'].'</td>';
+                            ?>
+                         <td><img class="portfolio_img" src="../public/assets/image/<?= $portfolio['projet_img'] ?>"></td>;
+                            <?php
                             echo '<td width="300">';
                             echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                             echo "  ";
