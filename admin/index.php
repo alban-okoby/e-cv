@@ -140,7 +140,7 @@
                     }
                 ?>        
         </div>
-        <div class="home">
+        <div class="education">
                 <h2>Education / Experiences </h2>
                 <table class="table table-striped table-bordered">
                     <thead>
@@ -161,6 +161,41 @@
                             echo '<td>'.$education['annee'].'</td>';
                             echo '<td>'.$education['post'].'</td>';
                             echo '<td>'.$education['description'].'</td>';
+                            echo '<td width="300">';
+                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo "  ";
+                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo "  ";
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '</td>';
+                            echo '</tr>';
+
+                        }
+                        DataBase::disconnect();
+                        ?>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="portfolio">
+                <h2>Portfolio</h2>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Nom du projet </th>
+                            <th>Image du projet</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $connexion = DataBase::connect();
+                        require_once('../src/Controller/PortfolioController.php');
+                        foreach ($row as $portfolio) {
+                            echo
+                            '<tr>';
+                            echo '<td>'.$portfolio['projet_name'].'</td>';
+                            echo '<td>'.$portfolio['projet_img'].'</td>';
                             echo '<td width="300">';
                             echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                             echo "  ";
