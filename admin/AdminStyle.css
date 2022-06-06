@@ -91,6 +91,9 @@ body {
 .btn-danger {
     background: var(--danger);
 }
+.btn-yellow {
+    background: var(--yellow);
+}
 .container-admin {
     width: 86%;
 }
@@ -102,8 +105,8 @@ body {
     border-radius: var(--border-card-radius);
 }
 .portfolio .portfolio_img {
-    width: 11vw;
-    height: 9vw;
+    width: 9vw;
+    height: 7vw;
     border-radius: var(--border-card-radius);
     border: solid .1rem var(--info);
 }

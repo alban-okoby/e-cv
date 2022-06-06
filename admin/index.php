@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Admin | ALBAN OKOBY Portfolio</title>
+    <!-- customize css -->
     <link rel="stylesheet" href="./AdminStyle.css">
+    <!-- CSS cdn -->
+        <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
 	<div class="col-md-offset-2"></div>	
 	<div class="container container-admin">
 		<div class="row">
-			<h1><strong>Votre espace admin </strong><a href="inserttest.php?id=1" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>Ajouter</a> <a href="../../index.php" class="btn btn-warning btn-lg"></span>Aller à l'acceuil</a></h1>
+			<h1><strong>Votre espace admin </strong><a href="inserttest.php?id=1" class="btn btn-success btn-lg"><span class="fa fa-plus"></span>Ajouter</a> <a href="../../index.php" class="btn btn-warning btn-lg"></span>Aller à l'acceuil</a></h1>
             <div class="home">
                 <h2>Section Home</h2>
                 <table class="table table-striped table-bordered">
@@ -40,11 +46,11 @@
                             echo '<td>'.$home['description'].'</td>';
                             echo '<td>'.$home['button'].'</td>';
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo '<a class="btn btn-yellow" href="view.php?id='.$home['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
@@ -89,11 +95,11 @@
                             echo '<td>'.$about['langue'].'</td>';
                             echo '<td>'.$about['button'].'</td>';
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="fa fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
@@ -124,11 +130,11 @@
                                     echo '<td>'.$about['formations_organisees'].'</td>';
                                     echo '<td>'.$about['certification'].'</td>';
                                     echo '<td width="300">';
-                                    echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                                    echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                                     echo "  ";
-                                    echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                                    echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                                     echo "  ";
-                                    echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                                    echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                                     echo '</td>';
                                     echo '</tr><br>';
     
@@ -163,11 +169,11 @@
                             echo '<td>'.$education['post'].'</td>';
                             echo '<td>'.$education['description'].'</td>';
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
@@ -200,11 +206,11 @@
                          <td><img class="portfolio_img" src="../public/assets/image/<?= $portfolio['projet_img'] ?>"></td>;
                             <?php
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="glyphicon glyphicon-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
@@ -216,5 +222,11 @@
                 </table>
             </div>
     </div>
+
+    <!-- JS cdn -->
+        <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
