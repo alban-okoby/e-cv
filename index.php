@@ -20,7 +20,7 @@
 </head>
 <body>
     <?php 
-        require 'src/Controller/database.php';
+        require './data/database.php';
     ?>
     <header>
         <div class="utilisateur">
@@ -45,7 +45,7 @@
     <section class="home" id="home">
     <?php 
      //  Appel et affichage des données de la table home
-        require "src/Controller/HomeController.php";
+        require "./src/Model/HomeModel.php";
 
         foreach($row as $home) {
         ?>
@@ -72,7 +72,7 @@
      <section class="about" id="apropos">
      <?php 
         //  Appel et affichage des données de la table about
-        require 'src/Controller/AboutController.php';
+        require './src/Model/AboutModel.php';
      
         foreach($row as $about) {
         ?>
@@ -129,7 +129,7 @@
     <section class="education" id="education">
         <?php 
         //  Appel et affichage des données de la table education
-            require 'src/Controller/EducationController.php';
+            require './src/Model/EducationModel.php';
         ?>
             <h2 class="heading">
                 Mon
@@ -155,13 +155,13 @@
             <h2 class="heading"> Mes<span> réalisations</span></h2>
             <article class="box-container">
                 <?php 
-                    require 'src/Controller/PortfolioController.php';
+                    require './src/Model/PortfolioModel.php';
                     foreach($row as $work){
                 ?>
                     <a href="#">
                     <div class="box">
-                        <img src="public/assets/image/<?= $work['projet_img'] ?>">
-                        <p><?= $work['projet_name'] ?></p>
+                        <img src="public/assets/image/<?= $work['project_img'] ?>">
+                        <p><?= $work['project_name'] ?></p>
                     </div>
                     </a>
                     <?php } ?>
