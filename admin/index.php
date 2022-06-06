@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
     <!-- customize css -->
-    <link rel="stylesheet" href="./AdminStyle.css">
+    <link rel="stylesheet" href="./src/css/Admin.css">
 </head>
 <body>
 <div class="container">
@@ -36,7 +36,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        require '../src/Controller/database.php';
+                        require '../data/database.php';
                         $connexion = DataBase::connect();
                         require_once('../src/Controller/homeController.php');
                         foreach ($row as $home) {
