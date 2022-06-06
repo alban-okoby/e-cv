@@ -38,7 +38,7 @@
                         <?php
                         require '../data/database.php';
                         $connexion = DataBase::connect();
-                        require_once('../src/Controller/homeController.php');
+                        require_once('../src/Model/HomeModel.php');
                         foreach ($row as $home) {
                             echo
                             '<tr>';
@@ -67,7 +67,7 @@
                 <h2>Section About</h2>
                 <?php
                         $connexion = DataBase::connect();
-                        require_once('../src/Controller/AboutController.php');
+                        require_once('../src/Model/AboutModel.php');
                         foreach ($row as $about) {
                     ?>
                 <table class="table table-striped table-bordered">
@@ -83,9 +83,9 @@
                                 <th>Langue(s)</th>
                                 <th>Télécharger</th>
                                 <th>Actions</th>
-                        </tr>
-				    </thead>
-                    <tbody>
+                             </tr>
+				        </thead>
+                        <tbody>
                         <?php
                             echo
                             '<tr>';
@@ -163,7 +163,7 @@
                     <tbody>
                         <?php
                         $connexion = DataBase::connect();
-                        require_once('../src/Controller/EducationController.php');
+                        require_once('../src/Model/EducationModel.php');
                         foreach ($rows as $education) {
                             echo
                             '<tr>';
@@ -199,13 +199,13 @@
                     <tbody>
                         <?php
                         $connexion = DataBase::connect();
-                        require_once('../src/Controller/PortfolioController.php');
+                        require_once('../src/Model/PortfolioModel.php');
                         foreach ($row as $portfolio) {
                             echo
                             '<tr>';
-                            echo '<td>'.$portfolio['projet_name'].'</td>';
+                            echo '<td>'.$portfolio['project_name'].'</td>';
                             ?>
-                         <td><img class="portfolio_img" src="../public/assets/image/<?= $portfolio['projet_img'] ?>"></td>;
+                         <td><img class="portfolio_img" src="../public/assets/image/<?= $portfolio['project_img'] ?>"></td>;
                             <?php
                             echo '<td width="300">';
                             echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
