@@ -16,13 +16,14 @@
     --info: hsl(249, 74%, 40%);
     --secondary: hsl(252, 60%, 65%);
     --danger: hsl(352, 81%, 50%);
-    --success: hsl(120, 95%, 65%);
+    --success: hsl(120, 79%, 42%);
     --gray: hsl(252, 15%, 65%);
     --dark: hsl(252, 30%, 17%);
     --black: hsl(252, 30%, 10%);
 
 
     --padding: 1rem 2rem;
+    --margin: 1rem;
     --border-radius: 1rem;
     --border-card-radius: .7rem;
     --border-card-right-radius: 1.2rem;
@@ -59,7 +60,31 @@ body {
     background: var(--light);
     color: var(--black);
     padding: var(--padding);
+    text-align: center;
 }
+
+.container-admin {
+    width: 86%;
+}
+
+.home,
+.about,
+.education,
+.portfolio {
+    background: var(--white);
+    padding: var(--card-padding);
+    text-align: center;
+    border-radius: var(--border-card-radius);
+    margin-bottom: var(--margin);
+}
+
+.portfolio .portfolio_img {
+    width: 9vw;
+    height: 7vw;
+    border-radius: var(--border-card-radius);
+    border: solid .1rem var(--info);
+}
+
 .btn{
     background-color: var(--yellow);
     color: var(--white);
@@ -94,19 +119,9 @@ body {
 .btn-yellow {
     background: var(--yellow);
 }
-.container-admin {
-    width: 86%;
-}
-
-.portfolio {
-    background: var(--white);
-    padding: var(--card-padding);
-    text-align: center;
-    border-radius: var(--border-card-radius);
-}
-.portfolio .portfolio_img {
-    width: 9vw;
-    height: 7vw;
-    border-radius: var(--border-card-radius);
-    border: solid .1rem var(--info);
+.btn-default {
+    background: var(--default);
+    border: var(--gray) solid .1rem;
+    color: var(--black);
+    
 }

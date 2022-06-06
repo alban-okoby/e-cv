@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Admin | ALBAN OKOBY Portfolio</title>
-    <!-- customize css -->
-    <link rel="stylesheet" href="./AdminStyle.css">
+    
     <!-- CSS cdn -->
         <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- customize css -->
+    <link rel="stylesheet" href="./AdminStyle.css">
 </head>
 <body>
 <div class="container">
@@ -46,7 +48,7 @@
                             echo '<td>'.$home['description'].'</td>';
                             echo '<td>'.$home['button'].'</td>';
                             echo '<td width="300">';
-                            echo '<a class="btn btn-yellow" href="view.php?id='.$home['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
                             echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
