@@ -12,9 +12,21 @@
     --light: hsl(var(--firstBackgroundHue), var(--secondBackgroundHue), var(--thirdBackgroundHue));
     --black: hsl(0, 0%, 0%);
     --yellow: hsl(var(--firstColorHue), var(--secondColorHue), var(--thirdColorHue));
+    --primary: hsl(252, 75%, 60%);
+    --info: hsl(249, 74%, 40%);
+    --secondary: hsl(252, 60%, 65%);
+    --danger: hsl(352, 81%, 50%);
+    --success: hsl(120, 95%, 65%);
+    --gray: hsl(252, 15%, 65%);
+    --dark: hsl(252, 30%, 17%);
+    --black: hsl(252, 30%, 10%);
+
 
     --padding: 1rem 2rem;
+    --border-radius: 1rem;
     --border-card-radius: .7rem;
+    --border-card-right-radius: 1.2rem;
+    --border-card-left-radius: 1.2rem;
     --card-padding: .1rem 1rem;
 }
 
@@ -24,10 +36,10 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    transition: all .25s linear;
+    transition: all .15s linear;
 }
 ::selection{
-    background: var(--selection);
+    background: var(--yellow);
     color: var(--yellow);
 }
 html{
@@ -44,27 +56,40 @@ html::-webkit-scrollbar-thumb{
     background: var(--yellow);
 }
 body {
-    background: var(--gray);
+    background: var(--light);
     color: var(--black);
     padding: var(--padding);
 }
 .btn{
-    background-color: var(--gray-2);
+    background-color: var(--yellow);
     color: var(--white);
-    padding: .6rem 1.1rem;
-    border: solid 1px var(--yellow);
-    border-radius: 5rem;
+    padding: .5rem 1rem;
+    border: solid .1rem var(--info);
+    border-radius: var(--border-radius);
     cursor: pointer;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 .btn:hover{
-    background-color: var(--yellow);
+    background-color: transparent;
     color: var(--black);
-    border: solid 1px var(--white);
+    opacity: .9;
 }
-.btn {
-    background: var(--yellow);
+.btn-primary {
+    background: var(--primary);
+}
+.btn-secondary {
+    background: var(--secondary);
+}
+.btn-info {
+    background: var(--info);
+}
+.btn-success {
+    background: var(--success);
+}
+.btn-danger {
+    background: var(--danger);
 }
 .container-admin {
     width: 86%;
@@ -75,11 +100,10 @@ body {
     padding: var(--card-padding);
     text-align: center;
     border-radius: var(--border-card-radius);
-    border: solid 1px var(--yellow);
 }
 .portfolio .portfolio_img {
     width: 11vw;
     height: 9vw;
     border-radius: var(--border-card-radius);
-    border: solid 1px var(--yellow)
+    border: solid .1rem var(--info);
 }
