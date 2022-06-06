@@ -47,7 +47,7 @@
         if($isUploadSuccess && $isSuccess){
             
             $db = DataBase::connect();
-            require_once '../Model/PortfolioModel.php';
+            require_once '../../../src/Model/PortfolioModel.php';
         }
         
 
