@@ -150,8 +150,10 @@
         </div>
         <div class="education">
                 <h2>Education / Experiences </h2>
-                <a href="./src/Controller/InsertEducation.php" class="btn btn-success">New education/exp</a>
-                <table class="table table-striped table-bordered">
+                <div class="action">
+                    <a href="./src/Controller/UpdateEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
+                </div>
+                    <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <th>Années</th>
