@@ -79,7 +79,7 @@ function cleanInput($data)
     <link rel="stylesheet" href="../css/Admin.css">
 </head>
 <body>
-    <form class="form" role="form" method="post" enctype="multipart/form-data" action="">
+    <form class="form" role="form" method="post" enctype="multipart/form-data" action="InserPortfolio.php">
         <div class="form-group">
             <label>Nom du projet :</label>
             <input class="form-control" type="text" id="name" name="project_name" placeholder="Ex: créa de logo" value="<?php echo $projectName; ?>"> </input> 

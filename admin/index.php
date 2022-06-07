@@ -151,6 +151,7 @@
         </div>
         <div class="education">
                 <h2>Education / Experiences </h2>
+                <a href="./src/Controller/InsertEducation.php" class="btn btn-success">New education/exp</a>
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
