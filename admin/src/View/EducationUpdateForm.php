@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../config/links/CdnCss.php">
 </head>
 <body>
-    <form class="form" role="form" method="post" action="InsertEducation.php">
+    <form class="form" role="form" method="post" action="UpdateEducation.php">
         <div class="form-group">
             <label for="annee">Année :</label>
             <input class="form-control" type="text" id="annee" name="annee" placeholder="Ex: créa de logo" value="<?php echo $annee; ?>"> </input> 
@@ -27,7 +27,7 @@
         </div>
         <div class="form-actions">
             <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Modifier</button>
-            <a href="index.php" class="btn btn-danger"><span class="glyphicon glyphicon-arrow-left"></span> Annuler</a>
+            <a href="../../../index.php" class="btn btn-danger"><span class="glyphicon glyphicon-arrow-left"></span> Annuler</a>
         </div>
     </form>
 </body>

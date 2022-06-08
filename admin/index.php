@@ -151,7 +151,7 @@
         <div class="education">
                 <h2>Education / Experiences </h2>
                 <div class="action">
-                    <a href="./src/Controller/UpdateEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
+                    <a href="./src/Controller/Update/UpdateEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
                 </div>
                     <table class="table table-striped table-bordered">
                     <thead>
@@ -175,7 +175,7 @@
                             echo '<td width="300">';
                             echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="./src/Controller/Update/UpdateEducation.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
                             echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
