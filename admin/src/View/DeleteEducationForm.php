@@ -13,7 +13,7 @@
     <div class="container container-admin">
         <div class="row">
             <h1><strong style="font-family:arial;"> Supprimer un élément  </strong><span class="glyphicon glyphicon-cross glyphicon-lg"></span></a></h1>
-            <form class="form" role="form" action="DeleteEducation.php" method="post">
+            <form class="form" role="form" action="DeleteEducationController.php" method="post">
                 <p class="alert alert-warning" style="color:black">Etes-vous sûr de vouloir supprimer cet élément ? <small>Cette action est irréversible !</small></p>
                 <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                 <div class="form-actions">

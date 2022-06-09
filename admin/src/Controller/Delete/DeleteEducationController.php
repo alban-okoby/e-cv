@@ -6,8 +6,14 @@
         $id = cleanInput($_GET['id']);
     }
 
-    // Model script
-    require_once('../Model/DeleteEducationModel.php');
+    if(!empty($_POST['id'])){
+
+        $id = cleanInput($_POST['id']);
+        // Model script
+        require '../../Model/DeleteEducationModel.php';
+
+        header("location:../../../index.php");
+    }
     
     function cleanInput($data) 
     {
@@ -17,4 +23,7 @@
         return $data;
     }
 
+    require_once('../../View/DeleteEducationForm.php');
+
     ?>
+
