@@ -151,7 +151,7 @@
         <div class="education">
                 <h2>Education / Experiences </h2>
                 <div class="action">
-                    <a href="./src/Controller/Update/UpdateEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
+                    <a href="./src/Controller/Insert/InsertEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
                 </div>
                     <table class="table table-striped table-bordered">
                     <thead>

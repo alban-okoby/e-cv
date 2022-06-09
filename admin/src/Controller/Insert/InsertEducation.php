@@ -1,6 +1,6 @@
 <?php
 
-    require '../../../data/database.php';
+    require '../../../../data/database.php';
 
     $anneeError = $postError = $desciptionError = $annee = $post = $description = "";
 
@@ -32,8 +32,8 @@
         }
         if($isUploadSuccess && $isSuccess){
             
-            require_once('../Model/InsertEducationModel.php');
-            header("location:../../index.php");
+            require_once('../../Model/InsertEducationModel.php');
+            header("location:../../../index.php");
         }
         
     }
@@ -47,4 +47,4 @@ function cleanInput($data)
     return $data;
 }
 
-require_once('../View/EducationInsertForm.php');
+require_once('../../View/EducationInsertForm.php');
