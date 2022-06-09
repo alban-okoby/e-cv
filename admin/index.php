@@ -165,7 +165,7 @@
                     <tbody>
                         <?php
                         $connexion = DataBase::connect();
-                        require_once('../src/Model/EducationModel.php');
+                        require_once('./src/Model/HomeAdminModel.php');
                         foreach ($rows as $education) {
                             echo
                             '<tr>';
