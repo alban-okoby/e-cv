@@ -173,7 +173,7 @@
                             echo '<td>'.$education['post'].'</td>';
                             echo '<td>'.$education['description'].'</td>';
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="./src/View/EachEducationItemView.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
                             echo '<a class="btn btn-primary" href="./src/Controller/Update/UpdateEducation.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";

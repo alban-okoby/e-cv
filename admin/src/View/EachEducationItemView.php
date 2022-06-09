@@ -8,12 +8,12 @@
 
     // Model script
     $db = DataBase::connect();
-    $statement = $db->prepare('SELECT education.annee, education.post, education.descriptionn WHERE education.id= ?');
-    $satement->execute((array($id)));
+    $statement = $db->prepare('SELECT education.annee, education.post, education.description FROM education WHERE education.id= ?');
+    $statement->execute((array($id)));
     $education = $statement->fetch();
     DataBase::disconnect();
 
-    function chechInput($data) 
+    function cleanInput($data) 
     {
         $id = htmlspecialchars($data);
         $id = stripslashes($data);
@@ -31,28 +31,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-CV | Alban Okoby</title>
     <link rel="stylesheet" href="../css/Admin.css">
+    <?php
+        include("../config/links/CdnCSs.php");
+    ?>
 </head>
 <body>
-    <form class="form" method="get">
-        <div class="form-group">
-            <label for="annee">Année :</label>
-            <input class="form-control" type="text" id="annee" name="annee" value="<?php echo $annee; ?>"> </input> 
-            <span class="help-inline"><?php echo $anneeError; ?></span>
-        </div>
-        <div class="form-group">
-            <label for="post">Post Occupé :</label>
-            <input type="text" name="post" id="post">
-            <span class="help-inline"><?php echo $postError ;?></span>
-        </div>
-        <div class="form-group">
-            <label for="description">Description:</label>
-            <input type="textarea" name="description" id="description">
-            <span class="help-inline"><?php echo $desciptionError ;?></span>
-        </div>
-        <div class="form-actions">
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Ajouter</button>
-            <a href="index.php" class="btn btn-danger"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
-        </div>
-    </form>
+    <div class="container-fluid">
+
+        <form class="form" method="get">
+            <div class="form-group">
+                <label for="annee">Année :</label>
+                <?= $education['annee'] ;?>
+            </div>
+            <div class="form-group">
+                <label for="post">Post Occupé :</label>
+                <?= $education['post'] ;?>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <?= $education['description'] ;?>
+            </div>
+            <div class="form-actions">
+                <a href="../../" class="btn btn-info"><span class="glyphicon glyphicon-arrow-left"></span> Retour 
+                <i class="fa fa-arrow-right"></i>
+            </a>
+            </div>
+        </form>
+
+    </div>
 </body>
 </html>
