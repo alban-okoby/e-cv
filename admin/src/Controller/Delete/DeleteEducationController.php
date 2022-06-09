@@ -1,5 +1,5 @@
 <?php 
-    require_once('../../../data/database.php');
+    require_once('../../../../data/database.php');
 
     if(!empty($_GET['id'])){
 

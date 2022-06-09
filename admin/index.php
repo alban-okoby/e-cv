@@ -177,7 +177,7 @@
                             echo "  ";
                             echo '<a class="btn btn-primary" href="./src/Controller/Update/UpdateEducation.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="./src/Controller/Delete/DeleteEducationController.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
