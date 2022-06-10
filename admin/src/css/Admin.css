@@ -25,10 +25,10 @@
     --padding: 1rem 2rem;
     --margin: 1rem;
     --border-radius: 1rem;
-    --border-card-radius: .7rem;
+    --border-card-radius: 1rem;
     --border-card-right-radius: 1.2rem;
     --border-card-left-radius: 1.2rem;
-    --card-padding: .1rem 1rem;
+    --card-padding: .7rem 1rem;
 }
 
 *{
@@ -63,8 +63,13 @@ body {
     text-align: center;
 }
 
+
 .container-admin {
     width: 86%;
+}
+
+.help-inline {
+    color: red;
 }
 
 .home,
@@ -124,4 +129,32 @@ body {
     border: var(--gray) solid .1rem;
     color: var(--black);
     
+}
+
+/* Form */
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 5rem;
+
+}
+
+.theform {
+    font-size: 100%;
+    text-align: left;
+    background-color: var(--white);
+    padding: 2rem 3rem;
+    border-radius: var(--border-card-radius);
+    box-shadow: 0 0 .6rem dimgray;
+}
+
+.theform input {
+    padding: var(--card-padding);
+    border-radius: var(--border-card-radius);
+    margin-bottom: .5rem;
+}
+
+.theform label {
+    font-size: 1.2rem;
 }
