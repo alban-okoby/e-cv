@@ -190,7 +190,7 @@
             </div>
             <div class="portfolio">
                 <h2>Portfolio</h2>
-                <a href="./src/Controller/InserPortfolio.php" class="btn btn-success">New project</a>
+                <a href="./src/Controller/Insert/InsertPortfolioController.php" class="btn btn-success">New project</a>
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>

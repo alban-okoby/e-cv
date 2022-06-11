@@ -44,7 +44,6 @@
     color: var(--yellow);
 }
 html{
-    font-size: 72.5%;
     overflow-x: hidden;
 }
 html::-webkit-scrollbar{
@@ -70,6 +69,7 @@ body {
 
 .help-inline {
     color: red;
+    margin-top: -3.2rem;
 }
 
 .home,
@@ -93,13 +93,14 @@ body {
 .btn{
     background-color: var(--yellow);
     color: var(--white);
-    padding: .5rem 1rem;
+    padding: .4rem .7rem;
     border: solid .1rem var(--info);
     border-radius: var(--border-radius);
     cursor: pointer;
     margin-top: 2rem;
     font-size: 1.2rem;
     text-decoration: none;
+    font-size: 87.5%;
 }
 .btn:hover{
     background-color: transparent;

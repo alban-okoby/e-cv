@@ -19,16 +19,18 @@
 
             <div class="theform col-lg-offset-3 col-lg-6 col-lg-offset-3">
                 
-                <h3 class="text-center mb-4">Ajouter Un nouveau projet </h3>
-                <form class="form" role="form" method="post" action="InsertPortfolioController.php">
+                <h3 class="text-center mb-4">Ajouter un nouveau projet </h3>
+                <form class="form" role="form" method="post" action="InsertPortfolioController.php" enctype="multipart/form-data">
+
                     <div class="form-group">
-                        <label for="annee">Nom du projet :</label>
-                        <input class="form-control" type="text" id="projectName" name="projectName" placeholder="Ex: Application de boutique" value="<?php echo $projectName; ?>"> </input> 
-                        <span class="help-inline"><?php echo $projectNameError; ?></span>
+                        <label for="projectName">Nom du projet :</label>
+                        <input class="form-control" type="text" id="projectName" name="project_name" placeholder="Ex: Application de boutique" value="<?php echo $projectName; ?>"> </input>  
+                        <span class="help-inline"><?php echo $projectNameError; ?></span> 
                     </div>
                     <div class="form-group">
-                        <label for="image">Fichier image :</label>
-                        <input type="file" name="project_img" id="image">
+                        <label for="image">Sélectionner l'image :</label>
+                        <input type="file" name="project_img" id="image"> <br>
+                        <!-- <i class="fas fa-image" style="color:green; font-size:2rem"></i> -->
                         <span class="help-inline"><?php echo $projectImageError ;?></span>
                     </div>
                    
