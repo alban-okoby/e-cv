@@ -38,7 +38,7 @@
                     </div> <br>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary"><span class="fa fa-plus"></span> Ajouter</button>
-                        <a href="../../../index.php" class="btn btn-danger">Retour <span class="fa fa-arrow-right"></span> </a>
+                        <a href="../../../index.php" class="btn btn-default">Retour <span class="fa fa-arrow-right"></span> </a>
                     </div>
                 </form>
             </div>

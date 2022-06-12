@@ -206,16 +206,16 @@
                         foreach ($row as $portfolio) {
                             echo
                             '<tr>';
-                            echo '<td>'.$portfolio['project_name'].'</td>';
+                            echo '<td class="project-name">'.$portfolio['project_name'].'</td>';
                             ?>
-                         <td><img class="portfolio_img" src="../public/assets/image/<?= $portfolio['project_img'] ?>"></td>;
+                         <td><img class="portfolio_img img-thumbnails" src="../public/assets/image/<?= $portfolio['project_img'] ?>"></td>;
                             <?php
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$education['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="view.php?id='.$portfolio['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$education['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="update.php?id='.$portfolio['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$education['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="delete.php?id='.$portfolio['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 

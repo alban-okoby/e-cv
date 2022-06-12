@@ -12,7 +12,7 @@
     --light: hsl(var(--firstBackgroundHue), var(--secondBackgroundHue), var(--thirdBackgroundHue));
     --black: hsl(0, 0%, 0%);
     --yellow: hsl(var(--firstColorHue), var(--secondColorHue), var(--thirdColorHue));
-    --primary: hsl(252, 75%, 60%);
+    --primary: hsl(257, 75%, 60%);
     --info: hsl(249, 74%, 40%);
     --secondary: hsl(252, 60%, 65%);
     --danger: hsl(352, 81%, 50%);
@@ -29,6 +29,8 @@
     --border-card-right-radius: 1.2rem;
     --border-card-left-radius: 1.2rem;
     --card-padding: .7rem 1rem;
+    --img-radius: .4rem;
+
 }
 
 *{
@@ -62,32 +64,9 @@ body {
     text-align: center;
 }
 
-
-.container-admin {
-    width: 86%;
-}
-
 .help-inline {
     color: red;
     margin-top: -3.2rem;
-}
-
-.home,
-.about,
-.education,
-.portfolio {
-    background: var(--white);
-    padding: var(--card-padding);
-    text-align: center;
-    border-radius: var(--border-card-radius);
-    margin-bottom: var(--margin);
-}
-
-.portfolio .portfolio_img {
-    width: 9vw;
-    height: 7vw;
-    border-radius: var(--border-card-radius);
-    border: solid .1rem var(--info);
 }
 
 .btn{
@@ -130,6 +109,31 @@ body {
     border: var(--gray) solid .1rem;
     color: var(--black);
     
+}
+
+.container-admin {
+    width: 86%;
+}
+
+.home,
+.about,
+.education,
+.portfolio {
+    background: var(--white);
+    padding: var(--card-padding);
+    text-align: center;
+    border-radius: var(--border-card-radius);
+    margin-bottom: var(--margin);
+}
+
+.portfolio .portfolio_img {
+    width: 9vw;
+    height: 7vw;
+    border-radius: var(--img-radius);
+    border: solid .1rem var(--gray);
+}
+.portfolio .project-name {
+    padding-top: 1rem;
 }
 
 /* Form */
