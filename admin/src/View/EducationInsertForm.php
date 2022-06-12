@@ -22,20 +22,25 @@
                 <h3 class="text-center mb-4">Ajouter une nouvelle expérience / éducation</h3>
                 <form class="form" role="form" method="post" action="InsertEducation.php">
                     <div class="form-group">
-                        <label for="annee">Année :</label>
-                        <input class="form-control" type="text" id="annee" name="annee" placeholder="Ex: Juin 2022" value="<?php echo $annee; ?>"> </input> 
+                        <label for="annee">Année<i class="help-inline">*</i></label>
                         <span class="help-inline"><?php echo $anneeError; ?></span>
+                        <input class="form-control" type="text" id="annee" name="annee" placeholder="Ex: Juin 2022" value="<?php echo $annee; ?>"> </input> 
                     </div>
                     <div class="form-group">
-                        <label for="post">Post(s) Occupé(s)</label>
-                        <input type="text" name="post" id="post" class="form-control" placeholder="Ex: Gestionnaire de base de données">
+                        <label for="post">Post(s) Occupé(s)<i class="help-inline">*</i></label>
                         <span class="help-inline"><?php echo $postError ;?></span>
+                        <input type="text" name="post" id="post" class="form-control" placeholder="Ex: Gestionnaire de base de données" value="<?php echo $post ;?>" >
                     </div>
                     <div class="form-group">
-                        <label for="description">Description:</label>
-                        <textarea  name="description" id="description" class="form-control" placeholder="Ex: Gestionnaire de base de données" rows="5"> </textarea>
-                        <span class="help-inline"><?php echo $desciptionError ;?></span>
-                    </div> <br>
+                        <label for="description">Description<i class="help-inline">*</i></label>
+                        <span class="help-inline"><?php echo $test ;?></span>
+                        <textarea  name="description" id="description" class="form-control" placeholder="Ex: Gestionnaire de base de données" rows="5" value="<?php echo $description ?>"> </textarea>
+                    </div> 
+                    <div class="form-group">
+                        <label for="position">Position </label>
+                        <input type="number" name="position" id="position" value="<?= $position ;?>" class="form-control" placeholder="0">
+                        <span class="help-inline"><?php echo $positionError ;?></span>
+                    </div>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary"><span class="fa fa-plus"></span> Ajouter</button>
                         <a href="../../../index.php" class="btn btn-default">Retour <span class="fa fa-arrow-right"></span> </a>

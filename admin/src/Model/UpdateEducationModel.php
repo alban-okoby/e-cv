@@ -1,11 +1,12 @@
 <?php
 
 $connect = DataBase::connect();
-            $educationUpdate = $connect->prepare("INSERT INTO education(id, annee, post, description) WHERE id VALUES(:id, :annee, :post, :description)");
+            $educationUpdate = $connect->prepare("INSERT INTO education(annee, post, description, position) WHERE id= ? VALUES(:annee, :post, :description, :position)");
             $educationUpdate->execute(array(
                                             'annee' => $annee,
                                             'post' => $post,
-                                            'description' => $description
+                                            'description' => $description,
+                                            'position' => $position,
                                         )
                                     );
     

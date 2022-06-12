@@ -141,7 +141,7 @@ body {
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
 }
 
@@ -162,4 +162,9 @@ body {
 
 .theform label {
     font-size: 1.2rem;
+}
+
+.theform .help-star {
+    font-size: 1.5rem;
+    color: var(--danger);
 }
