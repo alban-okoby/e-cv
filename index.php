@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alban Okoby">
-    <meta name="description" content="Emmanuel Alban Okoby est un developpeur, formateur et encadreur qui conçoit des interfaces de sites et applications web | ceci est l'un de mes travaux Personals j'ai nommé Personnal php_portfolio">
+    <meta name="description" content="Emmanuel Alban Okoby est un developpeur, formateur et encadreur sous les couleurs de l'ESN DigitalSouag qui conçoit des interfaces de sites, des templates d'applications web | ceci est l'un de ses travaux, j'ai nommé E-CV">
     <title> ALBAN OKOBY | Personal portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet"
