@@ -4,11 +4,23 @@ A un moment vous êtes amené à faire votre propre portrait professionnel, pas 
 Cette application est actuellement en construction .. 
 
 ### Parties terminées
-Read data depuis la base de données php_portfolio
+Read data from application database.
+#### Administration
+**Section Education / Expériences** <br>
+Lire les données depuis l'admin. <br> Ajouter des éléments. <br> Supprimer des éléments.
 
-# Exigences du projet
+**Section Portfolio** <br>
+Lire les données depuis l'admin. <br> Ajouter des éléments. <br> Supprimer des éléments.
+
+**Section About** <br>
+Lire les données depuis l'admin. <br> 
+
+**Section Home** <br>
+Lire les données depuis l'admin. <br> 
+
+## Exigences du projet
 Pour un tel projet(utilisant des scripts php/javascript vous devez avoir le minimum de logiciels vous permettant de l'exécuter, soit un SGBD(Xampp ou Wamp ou Mamp fera l'affaire). On supposant que vous ayez le nécessaire passons au projet en lui-même.
 
-# Base de données
+## Base de données
 A la racine du projet dans le dossier 'data' trouvez le fichier sql de la base de données.
 Vous devez créer une base de données nommée 'php_portfolio' dans votre SGBD et y importer le fichier sql.
