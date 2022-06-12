@@ -50,8 +50,7 @@
                             echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
                             echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
-                            echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
+                            
                             echo '</td>';
                             echo '</tr>';
 
@@ -99,8 +98,7 @@
                             echo '<a class="btn btn-default" href="view.php?id='.$home['id'].'" ><span class="fa fa-eye"></span> Voir</a>';
                             echo "  ";
                             echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
-                            echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
+                            
                             echo '</td>';
                             echo '</tr>';
 
@@ -135,7 +133,6 @@
                                     echo "  ";
                                     echo '<a class="btn btn-primary" href="update.php?id='.$home['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                                     echo "  ";
-                                    echo '<a class="btn btn-danger" href="delete.php?id='.$home['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                                     echo '</td>';
                                     echo '</tr><br>';
     
@@ -149,9 +146,11 @@
                 ?>        
         </div>
         <div class="education">
-                <h2>Education / Experiences </h2>
-                <div class="action">
-                    <a href="./src/Controller/Insert/InsertEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
+                <div class="heading">
+                    <h2>Education / Experiences </h2>
+                    <div class="action">
+                        <a href="./src/Controller/Insert/InsertEducation.php" class="btn btn-success">New <span class="fas fa-plus" ></span></a>
+                    </div>
                 </div>
                     <table class="table table-striped table-bordered">
                     <thead>
@@ -189,8 +188,12 @@
                 </table>
             </div>
             <div class="portfolio">
-                <h2>Portfolio</h2>
-                <a href="./src/Controller/Insert/InsertPortfolioController.php" class="btn btn-success">New project</a>
+                <div class="heading">
+                    <h2>Portfolio</h2>
+                    <div class="action">
+                        <a href="./src/Controller/Insert/InsertPortfolioController.php" class="btn btn-success">New project</a>
+                    </div>
+                </div>
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
@@ -211,9 +214,9 @@
                          <td><img class="portfolio_img img-thumbnails" src="../public/assets/image/<?= $portfolio['project_img'] ?>"></td>;
                             <?php
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="view.php?id='.$portfolio['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="./src/View/ViewPortfolioItem.php?id='.$portfolio['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
-                            echo '<a class="btn btn-primary" href="update.php?id='.$portfolio['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
+                            echo '<a class="btn btn-primary" href="./src/Controller/Update/UpdatePortfolio.php?id='.$portfolio['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
                             echo '<a class="btn btn-danger" href="./src/Controller/Delete/DeletePortfolioController.php?id='.$portfolio['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
