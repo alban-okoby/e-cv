@@ -215,7 +215,7 @@
                             echo "  ";
                             echo '<a class="btn btn-primary" href="update.php?id='.$portfolio['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
-                            echo '<a class="btn btn-danger" href="delete.php?id='.$portfolio['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
+                            echo '<a class="btn btn-danger" href="./src/Controller/Delete/DeletePortfolioController.php?id='.$portfolio['id'].'" ><span class="fa fa-remove"></span> Supprimer</a>';
                             echo '</td>';
                             echo '</tr>';
 
