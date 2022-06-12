@@ -3,7 +3,7 @@
     
     $connect = DataBase::connect();
 
-    $sqlEducation = 'SELECT * FROM education ORDER BY id ASC LIMIT 12';
+    $sqlEducation = 'SELECT * FROM education ORDER BY position ASC LIMIT 12';
     $educationStatement = $connect->query($sqlEducation);
     $educationStatement->execute();
     $rows = $educationStatement->fetchAll();
