@@ -214,7 +214,7 @@
                          <td><img class="portfolio_img img-thumbnails" src="../public/assets/image/<?= $portfolio['project_img'] ?>"></td>;
                             <?php
                             echo '<td width="300">';
-                            echo '<a class="btn btn-default" href="./src/View/ViewPortfolioItem.php?id='.$portfolio['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
+                            echo '<a class="btn btn-default" href="./src/View/EachPortfolioItemView.php?id='.$portfolio['id'].'" ><span class="fas fa-eye"></span> Voir</a>';
                             echo "  ";
                             echo '<a class="btn btn-primary" href="./src/Controller/Update/UpdatePortfolio.php?id='.$portfolio['id'].'" ><span class="fa fa-pencil"></span> Modifier</a>';
                             echo "  ";
