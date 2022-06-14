@@ -35,11 +35,7 @@ $isSuccess = $isValid = true;
         if($fileSize > 2097152){
 
             $projectImageError = 'La taille de l\'image ne doit dépasser 2Mo pour la rapidité de votre application,  choississez-en une autre';
-            $isValid = false;
-        // <script>
-        //     alert('Image Size Is Too Large');
-        // </script>
-        
+            $isValid = false;      
         }
         if($isSuccess && $isValid){
     
@@ -53,9 +49,13 @@ $isSuccess = $isValid = true;
       "
       <script>
         alert('Projet ajouté avec succès ');
+        window.location.href = '../../../index.php';
       </script>
       ";
+    //   header("refresh:1;../../../index.php");
     }
   }
 }
+
+require_once('../../View/PortfolioInsertForm.php');
 ?>
