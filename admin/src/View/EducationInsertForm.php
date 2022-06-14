@@ -18,8 +18,10 @@
         <div class="container-form">
 
             <div class="theform col-lg-offset-3 col-lg-6 col-lg-offset-3">
-                
                 <h3 class="text-center mb-4">Ajouter une nouvelle expérience / éducation</h3>
+                <div class="hat-container">
+                    <img src="../../../../public/assets/image/hat.jpg" alt="e-cv une nouvelle expérience/ éducation"/>
+                </div>
                 <form class="form" role="form" method="post" action="InsertEducation.php">
                     <div class="form-group">
                         <label for="annee">Année<i class="help-inline">*</i></label>

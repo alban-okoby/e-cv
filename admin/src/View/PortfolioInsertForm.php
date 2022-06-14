@@ -20,6 +20,9 @@
             <div class="theform col-lg-offset-3 col-lg-6 col-lg-offset-3">
                 
                 <h3 class="text-center mb-4">Ajouter un nouveau projet </h3>
+                <div class="project-container">
+                    <img src="../../../../public/assets/image/project.jpg" alt="e-cv un nouveau projet"/>
+                </div>
                 <form class="form" role="form" method="post" action="InsertPortfolioController.php" enctype="multipart/form-data">
 
                     <div class="form-group">
