@@ -44,20 +44,11 @@ $isSuccess = $isValid = true;
         if($isSuccess && $isValid){
     
             $imageDir ='../../../../public/assets/image/';
-                $imageFile = $imageDir . basename($projectImage);
-                
+            $imageFile = $imageDir . basename($projectImage);
                 // Move image into good folder
-                $moveImage = move_uploaded_file($_FILES['project_img']['tmp_name'], $imageFile);
-                
-            $connect = DataBase::connect();
-            $educationInsert = $connect->prepare("INSERT INTO portfolio(project_name, project_img) VALUES(:project_name, :project_img)");
-            $educationInsert->execute(array(
-                                                                            'project_name' => $projectName,
-                                                                            'project_img' => $projectImage
-                                                                    ));
-
-            DataBase::disconnect();
-      // require '../../Model/InsertPortfolio.php';
+            $moveImage = move_uploaded_file($_FILES['project_img']['tmp_name'], $imageFile);
+           
+            require '../../Model/InsertPortfolioModel.php';
       echo
       "
       <script>
