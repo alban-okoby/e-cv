@@ -5,7 +5,7 @@
     $anneeError = $postError = $descriptionError = $annee = $post = $description = $position = $positionError = $test =  "";
     $isnotTest = false;
 
-    $isSuccess = $isUploadSuccess = true;
+    $isSuccess = $isValid = true;
     
     if(!empty($_POST)){
         $annee          = cleanInput($_POST['annee']);
@@ -14,25 +14,26 @@
         $position       = cleanInput($_POST['position']);
        
         $isSuccess      = true;
-        $isUploadSuccess = false;
+        $isValid = false;
         
-        if(empty($annee)){
-            $anneeError = '<br>L\'année ne peut être vide !';
+        if(empty($annee) || empty($post) || empty($description)){
+            
             $isSuccess = false;
-        }
-        if(empty($post)){
-            $postError = '<br> Attention ! remplissez le post';
-            $isSuccess = false;
-        }
-        if(empty($_POST['description'])){
-           
-            $test = '<br> Veuillez remplir la description';
-            $isSuccess = false;
+
+            if(empty($annee)){
+                $anneeError = '<br>L\'année ne peut être vide !';
+            }
+            if(empty($description)){
+                $descriptionError = '<br> Veuillez remplir la description';
+            }
+            if(empty($post)){
+                $postError = '<br> Attention ! remplissez le post';
+            }
         }
         if((!empty($annee)) && (!empty($post)) && (!empty($description))){
 
-            $isUploadSuccess = true;
-            if($isUploadSuccess && $isSuccess){
+            $isSuccess = $isValid = true;
+            if($isValid && $isSuccess){
                 
                 require_once('../../Model/InsertEducationModel.php');
                 header("location:../../../index.php");
