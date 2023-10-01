@@ -19,7 +19,7 @@
 	<div class="col-md-offset-2"></div>	
 	<div class="container container-admin">
 		<div class="row">
-			<h1><strong>Votre espace admin </strong><a href="inserttest.php?id=1" class="btn btn-success btn-lg"><span class="fa fa-plus"></span>Ajouter</a> <a href="../../index.php" class="btn btn-warning btn-lg"></span>Aller à l'acceuil</a></h1>
+			<h1><strong>Votre espace admin </strong><a href="inserttest.php?id=1" class="btn btn-success btn-lg"><span class="fa fa-plus"></span>Ajouter</a> <a href="../../e-cv/index.php" class="btn btn-warning btn-lg"></span>Aller à l'acceuil</a></h1>
             <div class="home">
                 <h2>Section Home</h2>
                 <table class="table table-striped table-bordered">
